@@ -29,7 +29,7 @@ function DrawTrajectoryLcmGl(traj, lcmgl_name, options)
   if ~isfield(options, 'switch_buffers'), options.switch_buffers = true; end
   
   if ~isfield(options, 'lcmgl')
-    lcmgl = drake.util.BotLCMGLClient(lcm.lcm.LCM.getSingleton(), lcmgl_name);
+    lcmgl = drake.matlab.util.BotLCMGLClient(lcm.lcm.LCM.getSingleton(), lcmgl_name);
   else
     lcmgl = options.lcmgl;
   end
