@@ -82,7 +82,7 @@ cons.final_cost_on_time_gain = 4;
 cons.final_cost_on_state_gain = 0;
 
 checkDependency('lcmgl');
-lcmgl_f = drake.util.BotLCMGLClient(lcm.lcm.LCM.getSingleton(),'deltawing-dircol-final-condition');
+lcmgl_f = drake.matlab.util.BotLCMGLClient(lcm.lcm.LCM.getSingleton(),'deltawing-dircol-final-condition');
 lcmgl_f.glColor4f(1,0,0,.5);
 lcmgl_f.box(xf_turn(1:3), 2*bounds(1:3));
 
@@ -140,7 +140,7 @@ cons.final_cost_on_time_gain = 4;
 cons.final_cost_on_state_gain = 0;
 
 checkDependency('lcmgl');
-lcmgl_f = drake.util.BotLCMGLClient(lcm.lcm.LCM.getSingleton(),'deltawing-dircol-final-condition');
+lcmgl_f = drake.matlab.util.BotLCMGLClient(lcm.lcm.LCM.getSingleton(),'deltawing-dircol-final-condition');
 lcmgl_f.glColor4f(1,0,0,.5);
 lcmgl_f.box(xf_turn(1:3), 2*bounds(1:3));
 
@@ -196,7 +196,7 @@ xf_turn(7:9) = xf_drake(7:9);
 cons.final_cost_on_state_gain = 0;
 
 checkDependency('lcmgl');
-lcmgl_f = drake.util.BotLCMGLClient(lcm.lcm.LCM.getSingleton(),'deltawing-dircol-final-condition');
+lcmgl_f = drake.matlab.util.BotLCMGLClient(lcm.lcm.LCM.getSingleton(),'deltawing-dircol-final-condition');
 lcmgl_f.glColor4f(1,0,0,.5);
 lcmgl_f.box(xf_turn(1:3), 2*bounds(1:3));
 
@@ -251,7 +251,7 @@ xf_turn(7:9) = xf_drake(7:9);
 cons.final_cost_on_state_gain = 0;
 
 checkDependency('lcmgl');
-lcmgl_f = drake.util.BotLCMGLClient(lcm.lcm.LCM.getSingleton(),'deltawing-dircol-final-condition');
+lcmgl_f = drake.matlab.util.BotLCMGLClient(lcm.lcm.LCM.getSingleton(),'deltawing-dircol-final-condition');
 lcmgl_f.glColor4f(1,0,0,.5);
 lcmgl_f.box(xf_turn(1:3), 2*bounds(1:3));
 
@@ -297,7 +297,7 @@ xf_turn(3) = 10;
 cons = [];
 
 checkDependency('lcmgl');
-lcmgl_f = drake.util.BotLCMGLClient(lcm.lcm.LCM.getSingleton(),'deltawing-dircol-final-condition');
+lcmgl_f = drake.matlab.util.BotLCMGLClient(lcm.lcm.LCM.getSingleton(),'deltawing-dircol-final-condition');
 lcmgl_f.glColor4f(1,0,0,.5);
 lcmgl_f.box(xf_turn(1:3), 2*bounds(1:3));
 
@@ -345,7 +345,7 @@ utraj_init = ConstantTrajectory([0; 0; 0]);
 cons = [];
 
 checkDependency('lcmgl');
-lcmgl_f = drake.util.BotLCMGLClient(lcm.lcm.LCM.getSingleton(),'deltawing-dircol-final-condition');
+lcmgl_f = drake.matlab.util.BotLCMGLClient(lcm.lcm.LCM.getSingleton(),'deltawing-dircol-final-condition');
 lcmgl_f.glColor4f(1,0,0,.5);
 lcmgl_f.box(xf_turn(1:3), 2*bounds(1:3));
 
